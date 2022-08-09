@@ -43,7 +43,7 @@ var isAnagram = function(s, t) {
      
     for (let i = 0; i < slen; i++){
         if(t.indexOf(s[i]) != -1){
-            t.replace(s[i],'');
+           t = t.replace(s[i],''); // replace function in string does not make changes to the orginial string hence assignment is required
         }
         else 
             return false;
